@@ -19,7 +19,7 @@ app.get("/reddit-thread", async (req, res) => {
   let base = inputUrl.trim().replace(/\?.*$/, "").replace(/\/$/, "");
 
   // Step 2: Always append `.json`
-  const jsonUrl = `${base}/.json`;
+  const jsonUrl = `${base}.json`;
 
   let browser;
   try {
